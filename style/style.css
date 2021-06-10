@@ -314,11 +314,11 @@ div,section,header,footer{
 
 @media (max-width:424px) {
     .language span{
-        font-size: 0.7rem;  
+        font-size: 0.6rem;  
         left: -28%; 
     }
     .optlang{
-        margin-left: 16%;
+        margin-left: 19%;
     }
     .optlang div{
         width: 60%;
@@ -329,8 +329,8 @@ div,section,header,footer{
         width: 90%;
     }
     .location span{
-        font-size: 0.7rem; 
-        left: -25%;
+        font-size: 0.6rem; 
+        left: -29%;
     }
 
     .optlocation div{
