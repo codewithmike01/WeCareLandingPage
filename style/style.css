@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+div,section,header,footer{
+    display: block;
+}
+
+.landingPage{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(../images/LanguagePage.png);
+    background-size: cover;
+    background-position: center;
+}
+.dropDown{
+    /* border: 2px solid gold; */
+    position: relative;
+    top: 35%;
+    margin: 0 auto;
+    width: 50%;
+}
+/* Show and Hide */
+#hideFirst{
+    visibility: visible;
+}
+#showSecond{
+    visibility: hidden;
+}
+#showSecondNav{
+    visibility: hidden;
+}
+.showSecond{
+    position: absolute;
+    top: 0;
+    right: 15%;
+}
+
+
+
+.language span{
+    position: relative;
+    top: 20%;
+    left: -10%;
+    font-size: 1.2rem;   
+}
+
+.optlang div{
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+    width: 150px;
+    height: 25px;
+    margin: 0 auto;
+    margin-bottom: 0.6em;
+}
+
+.optlang div:focus{
+    outline: none;
+}
+
+.optlang{
+    width: 76%;
+    text-align: center;
+    margin-left: 8%;
+    background-color: rgba(250, 250, 250, 0.7);
+    padding-bottom: 1.5em;
+}
+.optlang div{
+    cursor: pointer;
+}
+
+.optlang div:hover{
+    border:1px solid #E5E5E5;
+    background-color: #E5E5E5;
+}
+
+.optlang div:active{
+    background-color: #b6b4b4;
+}
+
+.language{
+    width: 70%;
+    height: 2.5em;
+    padding-left: 5em;
+    padding-right: 1em;
+    text-align: center;
+    background-color: #E5E5E5;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* Location */
+.location span{
+    position: relative;
+    top: 20%;
+    left: -10%;
+    font-size: 1.2rem;
+    
+}
+
+.optlocation div{
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+    width: 150px;
+    height: 25px;
+    margin: 0 auto;
+    margin-bottom: 0.6em;
+}
+
+.optlocation{
+    overflow-y: scroll;
+    width: 89%;
+    height: 250px;
+    text-align: center;
+    margin-left: 11%;
+    background-color: rgba(250, 250, 250, 0.7);
+    padding-bottom: 1.5em;
+}
+
+.optlocation div{
+    cursor: pointer;
+}
+.optlocation div:focus{
+    outline: none;
+}
+
+.optlocation div:hover{
+    border:1px solid #E5E5E5;
+    background-color: #E5E5E5;
+}
+
+.optlocation div:active{
+    background-color: #b6b4b4;
+}
+
+.location{
+    width: 80%;
+    height: 2.5em;
+    padding-left: 5em;
+    padding-right: 1em;
+    text-align: center;
+    background-color: #E5E5E5;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+
+
+.cursor{
+    width: 90%;
+    color: black;
+    font-weight: bold;
+    position: absolute;
+    top: 90%;
+    left: 7%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 0.9em;
+}
+
+.btn{
+    border: 2px solid #C4C4C4;
+    background-color: #C4C4C4;
+    padding: 0.2em 0.9em;
+    border-radius: 10px;
+}
+
+.leftcursor, .rightcursor{
+    cursor: pointer;
+}
+
+.btn a{
+    text-decoration: none;
+    color: black;
+}
+
+.btn a:hover{
+    text-decoration: underline;
+}
+
+
+/* Media Query */
+
+@media (max-width:758px) {
+    .language span{
+        font-size: 1rem;   
+    }
+    .optlang{
+        margin-left: 9.5%;
+    }
+    .optlang div{
+        font-size: 0.9rem; 
+    }
+
+    .location span{
+        font-size: 1rem; 
+    }
+    .optlocation div{
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width:678px) {
+    .language span{
+        font-size: 0.9rem;   
+    }
+    .optlang{
+        margin-left: 13%;
+    }
+    .optlang div{
+        font-size: 0.9rem; 
+    }
+
+    .cursor {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width:605px) {
+    .language span{
+        font-size: 0.8rem;   
+    }
+    .optlang{
+        margin-left: 12%;
+    }
+    .optlang div{
+        font-size: 0.8rem; 
+    }
+    .optlocation{
+        margin-left: 15%;
+    }
+    .location span{
+        font-size: 0.9rem; 
+        left: -20%;
+    }
+
+    .optlocation{
+        margin-left: 17%;
+    }
+    .location span{
+        font-size: 0.8rem; 
+        left: -20%;
+    }
+
+    .optlocation div{
+        font-size: 0.8rem;
+    }
+
+}
+
+@media (max-width:589px) {
+    .language span{
+        font-size: 0.8rem;   
+    }
+    .optlang{
+        margin-left: 15%;
+    }
+    .optlang div{
+        font-size: 0.8rem; 
+    }
+}
+
+@media (max-width:493px) {
+    .language span{
+        font-size: 0.8rem;  
+        left: -19%; 
+    }
+    .optlang{
+        margin-left: 16%;
+    }
+    .optlang div{
+        width: 60%;
+    }
+
+    .optlocation{
+        margin-left: 20%;
+    }
+    .location span{
+        font-size: 0.7rem; 
+        left: -20%;
+    }
+
+    .optlocation div{
+        font-size: 0.7rem;
+    }
+    .cursor{
+        font-size: 0.7rem;
+    }
+
+
+}
+
+@media (max-width:489px) {
+    .language span{
+        font-size: 0.7rem;  
+        left: -19%; 
+    }
+    .optlang{
+        margin-left: 16%;
+    }
+    .optlang div{
+        font-size: 0.7rem;
+        width: 60%;
+    }
+}
+
+
+@media (max-width:424px) {
+    .language span{
+        font-size: 0.7rem;  
+        left: -28%; 
+    }
+    .optlang{
+        margin-left: 16%;
+    }
+    .optlang div{
+        width: 60%;
+        font-size: 0.7rem;
+    }
+    .optlocation{
+        margin-left: 23%;
+        width: 90%;
+    }
+    .location span{
+        font-size: 0.7rem; 
+        left: -25%;
+    }
+
+    .optlocation div{
+        font-size: 0.8rem;
+        width: 80%;
+    }
+
+    .cursor{
+        top:92%;
+        font-size: 0.69;
+    }
+
+}
+
