@@ -62,7 +62,7 @@ div,section,header,footer{
 .optlang{
     width: 76%;
     text-align: center;
-    margin-left: 4%;
+    margin-left: 6%;
     background-color: rgba(250, 250, 250, 0.7);
     padding-bottom: 1.5em;
 }
@@ -113,7 +113,7 @@ div,section,header,footer{
     width: 90%;
     height: 350px;
     text-align: center;
-    margin-left: 9%;
+    margin-left: 10%;
     background-color: rgba(250, 250, 250, 0.7);
     padding-bottom: 1.5em;
 }
@@ -188,6 +188,17 @@ div,section,header,footer{
 
 
 /* Media Query */
+
+@media (max-width:896px) {
+.optlocation{
+    margin-left:15%;
+}
+
+.optlang{
+    margin-left: 8%;
+}
+
+}
 
 @media (max-width:758px) {
     .language span{
